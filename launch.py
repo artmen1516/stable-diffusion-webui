@@ -126,7 +126,7 @@ git_clone("https://github.com/Hafiidz/latent-diffusion", repo_dir('latent-diffus
 if not is_installed("lpips"):
     run_pip(f"install -r {os.path.join(repo_dir('CodeFormer'), 'requirements.txt')}", "requirements for CodeFormer")
 
-run_pip(f"install -r {requirements_file}", "requirements for Web UI")
+#run_pip(f"install -r {requirements_file}", "requirements for Web UI")
 
 sys.argv += args
 
