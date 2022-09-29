@@ -95,7 +95,7 @@ def webui():
     )
 
     demo.launch(
-        share=cmd_opts.share,
+        share=True,
         server_name="0.0.0.0" if cmd_opts.listen else None,
         server_port=cmd_opts.port,
         debug=cmd_opts.gradio_debug,
