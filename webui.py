@@ -208,7 +208,7 @@ def webui():
             shared.demo.queue(64)
 
         app, local_url, share_url = shared.demo.launch(
-            share=cmd_opts.share,
+            share=True,
             server_name=server_name,
             server_port=cmd_opts.port,
             ssl_keyfile=cmd_opts.tls_keyfile,
